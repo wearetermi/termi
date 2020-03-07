@@ -6,8 +6,19 @@
 */
 
 // Set the motd
-termi.setText(`${termi.motd}<br>${termi.shell}`);
 
+termi.setText(`<pre><a style="color:#8cffbd">▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ ██▓
+▓  ██▒ ▓▒▓█   ▀ ▓██ ▒ ██▒▓██▒▀█▀ ██▒▓██▒
+▒ ▓██░ ▒░▒███   ▓██ ░▄█ ▒▓██    ▓██░▒██▒
+░ ▓██▓ ░ ▒▓█  ▄ ▒██▀▀█▄  ▒██    ▒██ ░██░
+  ▒██▒ ░ ░▒████▒░██▓ ▒██▒▒██▒   ░██▒░██░
+  ▒ ░░   ░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░   ░  ░░▓  
+    ░     ░ ░  ░  ░▒ ░ ▒░░  ░      ░ ▒ ░
+  ░         ░     ░░   ░ ░      ░    ▒ ░
+            ░  ░   ░            ░    ░  
+		</a><a style="color:#00ff6d">Prerelease I</a>
+<pre>`);
+termi.send(`<br>${termi.shell}`)
 // Scroll down when you can
 setInterval(() => window.scrollTo(0, document.body.scrollHeight))
 

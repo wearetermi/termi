@@ -10,7 +10,7 @@ function commandHandle(args, termi) {
 
 		// If we're trying to go info, then set the shell to show info
 		if (args[1] == "info") {
-			termi.shell = "<a>$ ~/info: </a>"
+			termi.shell = `<a style="color:#678e2c">user@termi</a>:<a style="color:#576690">/info</a>$ <a></a>`
 			termi.send(`<br>${termi.shell}`)
 			return true;
 		}
@@ -18,9 +18,9 @@ function commandHandle(args, termi) {
 		// If we're trying to go out one directory from our current directory
 		if (args[1] == "..") {
 			// If we're at the info dir, then change directorys to home!
-			if (termi.shell === "<a>$ ~/info: </a>") {
+			if (termi.shell === `<a style="color:#678e2c">user@termi</a>:<a style="color:#576690">/info</a>$ <a></a>`) {
 
-				termi.shell = `<a>$ ~: </a>`;
+				termi.shell = `<a style="color:#678e2c">user@termi</a>:<a style="color:#576690">/</a>$ <a></a>`;
 				termi.send(`<br>${termi.shell}`)
 				return true;
 			}
@@ -32,7 +32,7 @@ function commandHandle(args, termi) {
 	// LS (locate files)
 	if (args[0] == "ls") {
 		// If we're in the info directory, just print a newline.
-		if (termi.shell === "<a>$ ~/info: </a>") {
+		if (termi.shell === `<a style="color:#678e2c">user@termi</a>:<a style="color:#576690">/info</a>$ <a></a>`) {
 			termi.send(`<br>${termi.shell}`);
 			return true;
 		}
