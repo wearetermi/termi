@@ -13,6 +13,9 @@ opensource faster and I can learn git faster.
 7. ???
 8. Profit? 
 
+# But, if you don't want to host it yourself:
+you can find it here: https://termi.glitch.me/ !<br>
+It's hosting the newest stable update! (2020-03-07 16:12 current time)!
 ## Credits:
 http://patorjk.com/text-color-fader/ Drugs 001 fade for the `cat notes.txt` command<br>
 https://stackoverflow.com/a/11715670 Autoscroller<br>
