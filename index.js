@@ -1,41 +1,53 @@
 let termitext = document.getElementById("termi");
 let termi = {}
-termi.shell = "$ ",
-termi.motd = `Kuteshi's terminal emulator, TERM-I!`,
-termi.setText = (raw) => {
-    termitext.innerHTML = raw
-},
-termi.send = (x) => {
-    termitext.innerHTML = termitext.innerHTML + x
-}
+termi.shell = "<a>$ </a>",
+	termi.motd = `Kuteshi's terminal emulator, TERM-I!`,
+	termi.setText = (raw) => {
+		termitext.innerHTML = raw
+	},
+	termi.send = (x) => {
+		termitext.innerHTML = termitext.innerHTML + x
+	}
 
 termi.setText(`${termi.motd}<br>${termi.shell}`);
 
+setInterval(()=>window.scrollTo(0,document.body.scrollHeight))
+
 document.addEventListener("keydown", function onEvent(event) {
 
-    const args = termitext.innerHTML.split("$ ").slice(-1).join().split(" ");
-    const key = event.key.toLowerCase();
+	const args = termitext.innerHTML.split("$ ").slice(-1).join().split(" ");
+	const key = event.key.toLowerCase();
 
-    if (event.code === "Space") {
-        termi.send(" ")
-        return true;
-    }
+	if (event.code === "Space") {
+		termi.send(" ")
+		return true;
+	}
 
-    if (event.code === "Enter") {
-        
-        if (args[0] === "help") {
-        termi.send(`<br>Help hasn't been programmed yet!<br>${termi.shell}`)
-        return true;
-        }
+	if (event.code === "Enter") {
+		if (commandHandle(args)) {
+			return true;
+		} else {
+			if (args.join("") == "") {
+				termi.send(`<br>${termi.shell}`)
+				return true;
+		}
+			termi.send(`<br><a style="color:red">[ERR]</a> This command does not exist!<br>${termi.shell}`)
+			return true;
+		}
+	}
 
-        termi.send(`<br>[DEBUG] Arguments: ${args.join(" ")}!<br>${termi.shell}`)
-        return true;
-    }
+	if (event.code === "Backspace") {
+		termi.setText(termitext.innerHTML.substr(0, termitext.innerHTML.length - 1));
+		return true;
+	}
 
-    if (event.code === "Backspace") {
-        termi.setText(termitext.innerHTML.substr(0, termitext.innerHTML.length - 1));
-        return true;
-    }
-
-    termitext.innerHTML = termitext.innerHTML + event.key
+	termitext.innerHTML = termitext.innerHTML + event.key
 });
+
+
+function commandHandle(args) {
+	if (args[0] === "help") {
+		termi.send(`<br>Temporary command handler until completion!<br>${termi.shell}`)
+		return true;
+	}
+}
