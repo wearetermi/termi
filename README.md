@@ -23,3 +23,4 @@ https://stackoverflow.com/a/11715670 Autoscroller<br>
 https://www.freeformatter.com/javascript-beautifier.html Javascript formatting<br>
 https://keycode.info/ Keycode names for everything!<br>
 http://patorjk.com/software/taag/#p=display&h=0&f=Bloody&t=TERM-I MOTD figlet<br>
+http://detectmobilebrowsers.com/mobile Mobile detection<br>
