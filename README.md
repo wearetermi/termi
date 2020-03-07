@@ -7,8 +7,9 @@ opensource faster and I can learn git faster.
 1. Click the "Download" button and get the zip.
 2. Unpack it and open it
 3. Install Node and npm
-4. Now, run this (cmd): `npm install -g http-server`
-5. Now run (cmd) `http-server ./http`! It'll start a simple http server!
+4. Now, launch a command prompt and `cd` to the place you unpacked the zip!
+5. Now run (cmd) `npm install` to install a dependency!
+5. Now run (cmd) `npm start`! It'll start a simple http server!
 6. Then go to one of the links the command gives you!
 7. ???
 8. Profit? 
