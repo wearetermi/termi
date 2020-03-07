@@ -14,7 +14,7 @@ opensource faster and I can learn git faster.
 8. Profit? 
 
 ## Credits:
-http://patorjk.com/text-color-fader/ Drugs 001 fade for the `cat notes.txt` command\
-https://stackoverflow.com/a/11715670 Autoscroller
-https://www.freeformatter.com/javascript-beautifier.html Javascript formatting
-https://keycode.info/ Keycode names for everything!
+http://patorjk.com/text-color-fader/ Drugs 001 fade for the `cat notes.txt` command<br>
+https://stackoverflow.com/a/11715670 Autoscroller<br>
+https://www.freeformatter.com/javascript-beautifier.html Javascript formatting<br>
+https://keycode.info/ Keycode names for everything!<br>
