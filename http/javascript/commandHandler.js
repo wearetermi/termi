@@ -1,3 +1,10 @@
+/*
+*  termemu
+*  kuteshi 2020
+*  All rights reserved.
+*  Licensed under GPL-3 license.
+*/
+
 function commandHandle(args, termi) {
 	// Help commmand. Very simple
 	if (args[0] === "help") {
@@ -58,7 +65,7 @@ function commandHandle(args, termi) {
 		termi.send(`<br>${args.slice(1).join(" ")}<br>${termi.shell}`);
 		return true;
 	}
-	// Shows current location!
+	// PWD command, shows current location!
 	if (args[0] == "pwd") {
 		termi.send(`<br>${termi.shell.split(`">`)[2].split("</a>$")[0]}<br>${termi.shell}`);
 		return true;

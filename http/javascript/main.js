@@ -1,23 +1,17 @@
 /*
-*  TERM-I
+*  termemu
 *  kuteshi 2020
 *  All rights reserved.
-*  Licensed under MIT license.
+*  Licensed under GPL-3 license.
 */
 
 // Set the motd
-
-termi.setText(`<pre><a style="color:#8cffbd">▄▄▄█████▓▓█████  ██▀███   ███▄ ▄███▓ ██▓
-▓  ██▒ ▓▒▓█   ▀ ▓██ ▒ ██▒▓██▒▀█▀ ██▒▓██▒
-▒ ▓██░ ▒░▒███   ▓██ ░▄█ ▒▓██    ▓██░▒██▒
-░ ▓██▓ ░ ▒▓█  ▄ ▒██▀▀█▄  ▒██    ▒██ ░██░
-  ▒██▒ ░ ░▒████▒░██▓ ▒██▒▒██▒   ░██▒░██░
-  ▒ ░░   ░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░   ░  ░░▓  
-    ░     ░ ░  ░  ░▒ ░ ▒░░  ░      ░ ▒ ░
-  ░         ░     ░░   ░ ░      ░    ▒ ░
-            ░  ░   ░            ░    ░  
-		</a><a style="color:#00ff6d">Prerelease I</a>
-<pre>`);
+termi.setText(`<pre>${termi.color("pink",`__________________________ ______  ___        ________
+___  __/___  ____/___  __ \___   |/  /        ____  _/
+__  /   __  __/   __  /_/ /__  /|_/ / ________ __  /  
+_  /    _  /___   _  _, _/ _  /  / /  _/_____/__/ /   
+/_/     /_____/   /_/ |_|  /_/  /_/           /___/   `)}
+        	${termi.color("lightpink","Prerelease II (っ◔◡◔)っ ❤")}<pre>`);
 termi.send(`<br>${termi.shell}`)
 // Scroll down when you can
 setInterval(() => window.scrollTo(0, document.body.scrollHeight))
@@ -45,8 +39,8 @@ document.addEventListener("keydown", function onEvent(event) {
 				termi.send(`<br>${termi.shell}`)
 				return;
 			}
-			// Show a red [ERR] showing that the command does not exist.
-			termi.send(`<br><a style="color:red">[ERR]</a> This command does not exist!<br>${termi.shell}`)
+			// (very bash) Show a error.
+			termi.send(`<br>termi: ${args.join(" ")}: command not found<br>${termi.shell}`)
 			return;
 		}
 	}

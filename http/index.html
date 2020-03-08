@@ -1,3 +1,13 @@
+<!--
+*
+*  termemu
+*  kuteshi 2020
+*  All rights reserved.
+*  Licensed under GPL-3 license.
+*
+-->
+
+<!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -8,13 +18,29 @@
         
         #termi {
             color: white;
+            display: inline;
         }
-
+        
+        @keyframes blink {
+            from,
+            to {
+                border-color: transparent
+            }
+            50% {
+                border-color: white
+            }
+        }
+        
+        blink {
+            border-left: 2px solid white;
+            animation: 1s blink step-end infinite;
+        }
     </style>
-    <title>term-i</title>
+    <title>Term-I (termemu)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
-    <p id="termi"> <p>
+    <p id="termi"> </p><blink>&nbsp;</blink>
     <script src="javascript/detectMobile.js"></script>
     <script src="javascript/api.js"></script>
     <script src="javascript/commandHandler.js"></script>
