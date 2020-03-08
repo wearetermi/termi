@@ -18,7 +18,6 @@ opensource faster and I can learn git faster.
 you can find it here: https://termi.glitch.me/ !<br>
 It's hosting the newest stable update! (2020-03-07 21:33 gmt+3 current time)!
 ## Credits:
-http://patorjk.com/text-color-fader/ Drugs 001 fade for the `cat notes.txt` command<br>
 https://stackoverflow.com/a/11715670 Autoscroller<br>
 https://www.freeformatter.com/javascript-beautifier.html Javascript formatting<br>
 https://keycode.info/ Keycode names for everything!<br>
