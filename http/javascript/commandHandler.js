@@ -54,4 +54,15 @@ function commandHandle(args, termi) {
 		termi.send(`<br>${termi.shell}`);
 		return true;
 	}
+	// ECHO command, echoes whatever you say!
+	if (args[0] == "echo") {
+		termi.send(`<br>${args.slice(1).join(" ")}<br>${termi.shell}`);
+		return true;
+	}
+	// Shows current location!
+	if (args[0] == "pwd") {
+//split(`">`)[2].split("</a>$")[0]
+termi.send(`<br>${termi.shell.split(`">`)[2].split("</a>$")[0]}<br>${termi.shell}`);
+return true;
+	}
 }

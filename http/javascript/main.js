@@ -56,6 +56,11 @@ document.addEventListener("keydown", function onEvent(event) {
 		return;
 	}
 	// If nothing matches, just print the key.
-	termitext.innerHTML = termitext.innerHTML + event.key
+	let isOneChar=e=>!(e.split("").length>1);
+	if(isOneChar(event.key)) {
+		termitext.innerHTML = termitext.innerHTML + event.key
+	} else {
+		return;
+	}
 });
 
