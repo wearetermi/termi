@@ -12,10 +12,10 @@ let termi = {}
 termi.color = (y, x) => {
 	return `<a style="color:${y}">${x}</a>`;
 },
-termi.shell = `${termi.color("8cffbd", "user@termi")}:${termi.color("#576690", "/")}$ <a></a>`,
-termi.oshell = `${termi.color("#8cffbd", "user@termi")}:${termi.color("#576690", "/")}$ <a></a>`,
+termi.shell = `${termi.color("lightgreen", "user@termi")}:${termi.color("#576690", "/")}$ <a></a>`,
+termi.oshell = `${termi.color("lightgreen", "user@termi")}:${termi.color("#576690", "/")}$ <a></a>`,
 termi.shelldir = (dir) => {
-	return `${termi.color("#8cffbd", "user@termi")}:${termi.color("#576690", dir)}$ <a></a>`
+	return `${termi.color("lightgreen", "user@termi")}:${termi.color("#576690", dir)}$ <a></a>`
 };
 	termi.motd = `Kuteshi's terminal emulator, TERM-I!`,
 	termi.setText = (raw) => {
