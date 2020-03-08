@@ -16,8 +16,7 @@ termi.shell = `${termi.color("lightgreen", "user@termi")}:${termi.color("#576690
 termi.oshell = `${termi.color("lightgreen", "user@termi")}:${termi.color("#576690", "/")}$ <a></a>`,
 termi.shelldir = (dir) => {
 	return `${termi.color("lightgreen", "user@termi")}:${termi.color("#576690", dir)}$ <a></a>`
-};
-	termi.motd = `Kuteshi's terminal emulator, TERM-I!`,
+},
 	termi.setText = (raw) => {
 		termitext.innerHTML = raw
 	},
