@@ -2,7 +2,7 @@
 function commandHandle(args, termi) {
 	// Help commmand. Very simple
 	if (args[0] === "help") {
-		termi.send(`<br>ls, cd<br>${termi.shell}`)
+		termi.send(`<br>ls, cd, cat<br>${termi.shell}`)
 		return true;
 	}
 	// CD command (current directory)

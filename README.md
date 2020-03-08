@@ -16,7 +16,7 @@ opensource faster and I can learn git faster.
 
 # But, if you don't want to host it yourself:
 you can find it here: https://termi.glitch.me/ !<br>
-It's hosting the newest stable update! (2020-03-07 21:33 gmt+3 current time)!
+It's hosting the newest stable update! (2020-03-08 10:51 am gmt+3 current time)!
 ## Credits:
 https://stackoverflow.com/a/11715670 Autoscroller<br>
 https://www.freeformatter.com/javascript-beautifier.html Javascript formatting<br>
