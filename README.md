@@ -4,7 +4,7 @@ Current version: Prerelease II.<br>
 This is in no way finished!
 
 - **Discord**: https://discord.gg/sAwgmYC
-- **Website**: https://termi.glitch.me/ (Last updated 2020-03-08 10:51 GMT +3)
+- **Website**: https://termi.glitch.me/ (Last updated 2020-03-08 20:38 GMT +3)
 
 # How the heck do I use this?
 1. Click the "Download" button and get the zip.
