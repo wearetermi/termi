@@ -1,8 +1,7 @@
-
 function commandHandle(args, termi) {
 	// Help commmand. Very simple
 	if (args[0] === "help") {
-		termi.send(`<br>ls, cd, cat<br>${termi.shell}`)
+		termi.send(`<br>ls, cd, cat, echo, pwd<br>${termi.shell}`)
 		return true;
 	}
 	// CD command (current directory)
@@ -61,8 +60,7 @@ function commandHandle(args, termi) {
 	}
 	// Shows current location!
 	if (args[0] == "pwd") {
-//split(`">`)[2].split("</a>$")[0]
-termi.send(`<br>${termi.shell.split(`">`)[2].split("</a>$")[0]}<br>${termi.shell}`);
-return true;
+		termi.send(`<br>${termi.shell.split(`">`)[2].split("</a>$")[0]}<br>${termi.shell}`);
+		return true;
 	}
 }
