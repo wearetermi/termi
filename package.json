@@ -1,0 +1,10 @@
+{
+    "name": "termemu",
+    "author": "kuteshi",
+    "scripts": {
+      "start": "http-server ./http"
+    },
+    "dependencies": {
+      "http-server": "^0.12.1"
+    }
+  }
