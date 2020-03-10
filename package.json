@@ -1,5 +1,5 @@
 {
-    "name": "termemu",
+    "name": "termi",
     "author": "kuteshi",
     "scripts": {
       "start": "http-server ./http"

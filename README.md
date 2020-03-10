@@ -1,6 +1,5 @@
 # Term-I. browser JS based terminal emulator.
 
-![Node.js CI](https://github.com/kuteshiki/termemu/workflows/Node.js%20CI/badge.svg)<br>
 Current version: Prerelease II.<br>
 This is in no way finished!
 
