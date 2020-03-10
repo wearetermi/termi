@@ -20,6 +20,7 @@ This is in no way finished!
 # Current testing:
 Firefox 73.0.1 (64-bit) Linux [passed]<br>
 Falkon 3.1.0 (64-bit) Linux [passed]<br>
+Chrome v80.0.3987.132 (64-bit) Windows [passed]<br>
 (Please report any bugs!)
 <br>
 # Credits:
