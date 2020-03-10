@@ -1,5 +1,5 @@
 /*
-*  termemu
+*  termi
 *  kuteshi 2020
 *  All rights reserved.
 *  Licensed under GPL-3 license.
