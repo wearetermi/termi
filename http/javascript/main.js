@@ -6,12 +6,12 @@
 */
 
 // Set the motd
-termi.setText(`<pre>${termi.color("pink",`__________________________ ______  ___        ________
+termi.setText(`<pre>${termi.color("green",`__________________________ ______  ___        ________
 ___  __/___  ____/___  __ \___   |/  /        ____  _/
 __  /   __  __/   __  /_/ /__  /|_/ / ________ __  /  
 _  /    _  /___   _  _, _/ _  /  / /  _/_____/__/ /   
 /_/     /_____/   /_/ |_|  /_/  /_/           /___/   `)}
-        	${termi.color("lightpink","Prerelease II (っ◔◡◔)っ ❤")}<pre>`);
+        	${termi.color("lightgreen","Prerelease II.")}<pre>`);
 termi.send(`<br>${termi.shell}`)
 // Scroll down when you can
 setInterval(() => window.scrollTo(0, document.body.scrollHeight))

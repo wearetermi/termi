@@ -23,16 +23,15 @@ Chrome v80.0.3987.132 (64-bit) Windows [passed]<br>
 (Please report any bugs!)
 
 # TO;DO!
-programming ideas for termi<br>
-change all names to termi<br>
-make color command<br>
-make a in-HTML todo command<br>
-give the motd diffrent colors<br>
-make a termi api / server<br>
-statistics<br>
-history (HEAVY)<br>
-cornavirus api for termi<br>
-
+change all names to termi [DONE]<br>
+make color command [DISCARDED, there's no reason for this]<br>
+make a in-HTML todo command [DISCARDED, it's better here.]<br>
+give the motd diffrent colors [DONE]<br>
+make a termi api / server [DISCARDED, not usefull]<br>
+statistics [DISCARDED, as this is a oss project.]<br>
+history (HEAVY) [DONE]<br>
+cornavirus api for termi [DISCARDED, not related to TERM-I]<br>
+Move to GH-pages<br>
 # Credits:
 https://stackoverflow.com/a/11715670 Autoscroller<br>
 https://www.freeformatter.com/javascript-beautifier.html Javascript formatting<br>
