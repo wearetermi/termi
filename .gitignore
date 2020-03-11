@@ -1,3 +1,4 @@
 autoPush.sh
 start.sh
 autoGHP.js
+node_modules/*
