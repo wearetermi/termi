@@ -49,6 +49,9 @@ document.addEventListener("keydown", function onEvent(event) {
 		termi.setText(termitext.innerHTML.substr(0, termitext.innerHTML.length - 1));
 		return;
 	}
+	if (event.code === "ArrowUp") {
+		historyHandle("up", termi, termitext)
+	}
 	// If nothing matches, test if the key is one charecter. If it is, then print it, but if it's not, then don't.
 	let isOneChar=e=>!(e.split("").length>1);
 	if(isOneChar(event.key)) {
