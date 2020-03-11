@@ -4,7 +4,7 @@ Current version: Prerelease II.<br>
 This is in no way finished!
 
 - **Discord**: https://discord.gg/sAwgmYC
-- **Website**: https://termi.glitch.me/ (Last updated 2020-03-08 20:39 GMT +3)
+- **Website**: https://wearetermi.github.io/termi/
 
 # How the heck do I use this?
 1. Click the "Download" button and get the zip.
@@ -31,7 +31,7 @@ make a termi api / server [DISCARDED, not usefull]<br>
 statistics [DISCARDED, as this is a oss project.]<br>
 history (HEAVY) [DONE]<br>
 cornavirus api for termi [DISCARDED, not related to TERM-I]<br>
-Move to GH-pages<br>
+Move to GH-pages [DONE]<br>
 # Credits:
 https://stackoverflow.com/a/11715670 Autoscroller<br>
 https://www.freeformatter.com/javascript-beautifier.html Javascript formatting<br>

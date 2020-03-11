@@ -8,6 +8,7 @@ const lastArgs = termitext.innerHTML.split(termi.shell).pop();
 const before = args[args.length - 2].split("<br>")[0];
 // Get repeated text in a array
 const getRepeatedText = lastArgs.split('').reduce((s, c) => {let l = s.length-1; (s[l] && s[l].length < before.length) ? s[l] += c : s.push(c); return s;}, []);
+
 // If the arrowkey is up, then:
 if(s === "up") {
     // Check if the last message includes the little happy face (You cannot write this, so we're checking if it's the motd)
@@ -22,4 +23,5 @@ if(s === "up") {
     }
     }
 }
+
 }
