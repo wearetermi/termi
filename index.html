@@ -11,6 +11,7 @@
 <html>
 <head>
     <style>
+
         body {
             background-color: black;
             font-size: 20px;
@@ -35,16 +36,24 @@
             border-left: 2px solid white;
             animation: 1s blink step-end infinite;
         }
+
     </style>
+    <!-- Title + Viewport tag-->
     <title>Term-I</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
+    <!-- Termi main tag + the blink tag.-->
     <p id="termi"> </p><blink>&nbsp;</blink>
+    <!-- Test if user is mobile -->
     <script src="javascript/detectMobile.js"></script>
+    <!-- History API -->
     <script src="javascript/history.js"></script>
+    <!-- Main termi API -->
     <script src="javascript/api.js"></script>
+    <!-- Command handler -->
     <script src="javascript/commandHandler.js"></script>
+    <!-- Set up history and command handler -->
     <script src="javascript/main.js"></script>
 </body>
 </html>
