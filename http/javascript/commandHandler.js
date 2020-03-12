@@ -13,7 +13,6 @@ function commandHandle(args, termi) {
 	}
 	// CD command (current directory)
 	if (args[0] == "cd") {
-
 		// If we're trying to go info, then set the shell to show info
 		if (args[1] == "info") {
 			termi.shell = termi.shelldir("/info")
@@ -37,22 +36,47 @@ function commandHandle(args, termi) {
 	}
 	// LS (locate files)
 	if (args[0] == "ls") {
-		// If we're in the info directory, just print a newline.
+		// Checks if the directory is Info, and if it is
+		// then print a newline due to no files being in
+		// the info directory
+
 		if (termi.shell === termi.shelldir("/info")) {
 			termi.send(`<br>${termi.shell}`);
 			return true;
 		}
+
 		// Show a bunch of files you can cd + run.
 		termi.send(`<br><a style="color:green">welcometotermi.sh</a>  info  notes.txt<br>${termi.shell}`)
 		return true;
 	}
 	// Welcome to termi shell script.
 	if (args[0] == "./welcometotermi.sh") {
+
+		// Checks if the directory is Info, and if it is
+		// then print a newline due to no files being in
+		// the info directory
+
+		if (termi.shell === termi.shelldir("/info")) {
+			termi.send(`<br>${termi.shell}`);
+			return true;
+		}
+
+
 		termi.send(`<br>Hello, this is a simple terminal app made by Kuteshi! Feel welcome.<br>${termi.shell}`)
 		return true;
 	}
 	// CAT command! It sends file contents to the terminal!
 	if (args[0] == "cat") {
+
+		// Checks if the directory is Info, and if it is
+		// then print a newline due to no files being in
+		// the info directory
+
+		if (termi.shell === termi.shelldir("/info")) {
+			termi.send(`<br>${termi.shell}`);
+			return true;
+		}
+
 		if (args[1] == "notes.txt") {
 			termi.send(`<br>Wow, you're reading the notes file!<br>${termi.shell}`)
 			return true;
