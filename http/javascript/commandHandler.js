@@ -6,13 +6,16 @@
 */
 
 function commandHandle(args, termi) {
+
 	// Help commmand. Very simple
 	if (args[0] === "help") {
 		termi.send(`<br>ls, cd, cat, echo, pwd<br>${termi.shell}`)
 		return true;
 	}
+
 	// CD command (current directory)
 	if (args[0] == "cd") {
+
 		// If we're trying to go info, then set the shell to show info
 		if (args[1] == "info") {
 			termi.shell = termi.shelldir("/info")
@@ -34,6 +37,7 @@ function commandHandle(args, termi) {
 		termi.send(`<br>${termi.shell}`)
 		return true;
 	}
+
 	// LS (locate files)
 	if (args[0] == "ls") {
 		// Checks if the directory is Info, and if it is
@@ -49,6 +53,7 @@ function commandHandle(args, termi) {
 		termi.send(`<br><a style="color:green">welcometotermi.sh</a>  info  notes.txt<br>${termi.shell}`)
 		return true;
 	}
+
 	// Welcome to termi shell script.
 	if (args[0] == "./welcometotermi.sh") {
 
@@ -61,10 +66,10 @@ function commandHandle(args, termi) {
 			return true;
 		}
 
-
 		termi.send(`<br>Hello, this is a simple terminal app made by Kuteshi! Feel welcome.<br>${termi.shell}`)
 		return true;
 	}
+
 	// CAT command! It sends file contents to the terminal!
 	if (args[0] == "cat") {
 
@@ -84,11 +89,13 @@ function commandHandle(args, termi) {
 		termi.send(`<br>${termi.shell}`);
 		return true;
 	}
+
 	// ECHO command, echoes whatever you say!
 	if (args[0] == "echo") {
 		termi.send(`<br>${args.slice(1).join(" ")}<br>${termi.shell}`);
 		return true;
 	}
+	
 	// PWD command, shows current location!
 	if (args[0] == "pwd") {
 		termi.send(`<br>${termi.shell.split(`">`)[2].split("</a>$")[0]}<br>${termi.shell}`);
