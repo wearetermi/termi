@@ -1,3 +1,10 @@
+/*
+*  termi
+*  Copyright © wearetermi 2020
+*  All rights reserved.
+*  Licensed under GPL-3 license.
+*/
+
 function historyHandle(s, termi, termitext) {
     
 // Arguments for later in the code
@@ -15,7 +22,7 @@ const getRepeatedText = lastArgs.split('').reduce((s, c) => {let l = s.length-1;
 // If the arrowkey is up, then:
 if(s === "up") {
     // Check if the last message includes the little happy face (You cannot write this, so we're checking if it's the motd)
-    if(!before.includes("(っ◔◡◔)っ ❤")) {
+    if(!before.includes("<b></b>")) {
         // See if the arguments current arguments have the before text in them
     if (args.join().includes(before)) {
         // Check if the repeated text amount length is bigger than zero, and if it's NOT then:

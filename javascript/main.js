@@ -1,18 +1,31 @@
 /*
 *  termi
-*  kuteshi 2020
+*  Copyright © wearetermi 2020
 *  All rights reserved.
 *  Licensed under GPL-3 license.
 */
 
 // Set the motd
-termi.setText(`<pre>${termi.color("green",`__________________________ ______  ___        ________
-___  __/___  ____/___  __ \___   |/  /        ____  _/
-__  /   __  __/   __  /_/ /__  /|_/ / ________ __  /  
-_  /    _  /___   _  _, _/ _  /  / /  _/_____/__/ /   
-/_/     /_____/   /_/ |_|  /_/  /_/           /___/   `)}
-        	${termi.color("lightgreen","Prerelease II.")}<pre>`);
-termi.send(`<br>${termi.shell}`)
+
+termi.setText(`
+<center>
+<div style="font-family: monospace, fixed; font-weight: bold;">
+<span style=";color:#f5f">&#9484;&#9472;</span><span style=";color:#f55">&#9472;&#9472;</span><span style=";color:#ff5">&#9472;&#9472;</span><span style=";color:#5f5">&#9472;&#9472;</span><span style=";color:#5ff">&#9472;&#9472;</span><span style=";color:#55f">&#9472;&#9472;</span><span style=";color:#f5f">&#9472;&#9472;</span><span style=";color:#f55">&#9472;&#9472;</span><span style=";color:#ff5">&#9472;&#9472;</span><span style=";color:#5f5">&#9472;&#9472;</span><span style=";color:#5ff">&#9472;&#9472;</span><span style=";color:#55f">&#9472;&#9472;</span><span style=";color:#f5f">&#9472;&#9472;</span><span style=";color:#f55">&#9472;&#9472;</span><span style=";color:#ff5">&#9472;&#9472;</span><span style=";color:#5f5">&#9472;&#9472;</span><span style=";color:#5ff">&#9472;&#9472;</span><span style=";color:#55f">&#9472;&#9472;</span><span style=";color:#f5f">&#9472;&#9472;</span><span style=";color:#f55">&#9472;&#9472;</span><span style=";color:#ff5">&#9472;&#9472;</span><span style=";color:#5f5">&#9472;&#9488;</span><br />
+<span style=";color:#f55">&#9474;</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#5ff">&#9474;</span><br />
+<span style=";color:#ff5">&#9474;m</span><span style=";color:#5f5">mm</span><span style=";color:#5ff">mm</span><span style=";color:#55f">mm</span><span style="">&#160;</span><span style=";color:#f5f">m</span><span style=";color:#f55">mm</span><span style=";color:#ff5">mm</span><span style=";color:#5f5">m</span><span style="">&#160;</span><span style=";color:#5ff">mm</span><span style=";color:#55f">mm</span><span style=";color:#f5f">m</span><span style="">&#160;&#160;</span><span style=";color:#f55">m</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#5ff">m</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#ff5">m</span><span style=";color:#5f5">mm</span><span style=";color:#5ff">mm</span><span style="">&#160;</span><span style=";color:#55f">&#9474;</span><br />
+<span style=";color:#5f5">&#9474;</span><span style="">&#160;&#160;&#160;</span><span style=";color:#55f">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#f55">#</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#55f">#</span><span style="">&#160;&#160;&#160;</span><span style=";color:#f55">&quot;#</span><span style="">&#160;</span><span style=";color:#ff5">#</span><span style=";color:#5f5">#</span><span style="">&#160;&#160;</span><span style=";color:#5ff">#</span><span style=";color:#55f">#</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#5ff">#</span><span style="">&#160;&#160;&#160;</span><span style=";color:#f5f">&#9474;</span><br />
+<span style=";color:#5ff">&#9474;</span><span style="">&#160;&#160;&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#ff5">#</span><span style=";color:#5f5">mm</span><span style=";color:#5ff">mm</span><span style=";color:#55f">m</span><span style="">&#160;</span><span style=";color:#f5f">#m</span><span style=";color:#f55">mm</span><span style=";color:#ff5">m&quot;</span><span style="">&#160;</span><span style=";color:#5f5">#</span><span style="">&#160;</span><span style=";color:#5ff">#</span><span style=";color:#55f">#</span><span style="">&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#55f">#</span><span style="">&#160;&#160;&#160;</span><span style=";color:#f55">&#9474;</span><br />
+<span style=";color:#55f">&#9474;</span><span style="">&#160;&#160;&#160;</span><span style=";color:#f55">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#5f5">#</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#f55">#</span><span style="">&#160;&#160;&#160;</span><span style=";color:#5f5">&quot;m</span><span style="">&#160;</span><span style=";color:#5ff">#</span><span style="">&#160;</span><span style=";color:#55f">&quot;</span><span style=";color:#f5f">&quot;</span><span style="">&#160;</span><span style=";color:#f55">#</span><span style="">&#160;&#160;</span><span style=";color:#ff5">&quot;</span><span style=";color:#5f5">&quot;&quot;</span><span style="">&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#f5f">#</span><span style="">&#160;&#160;&#160;</span><span style=";color:#ff5">&#9474;</span><br />
+<span style=";color:#f5f">&#9474;</span><span style="">&#160;&#160;&#160;</span><span style=";color:#ff5">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#5ff">#</span><span style=";color:#55f">mm</span><span style=";color:#f5f">mm</span><span style=";color:#f55">m</span><span style="">&#160;</span><span style=";color:#ff5">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#5ff">&quot;</span><span style="">&#160;</span><span style=";color:#55f">#</span><span style="">&#160;&#160;&#160;&#160;</span><span style=";color:#ff5">#</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#f5f">m</span><span style=";color:#f55">m#</span><span style=";color:#ff5">mm</span><span style="">&#160;</span><span style=";color:#5f5">&#9474;</span><br />
+<span style=";color:#f55">&#9474;</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#5ff">&#9474;</span><br />
+<span style=";color:#ff5">&#9474;</span><span style="">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span style=";color:#55f">&#9474;</span><br />
+<span style=";color:#5f5">&#9492;&#9472;</span><span style=";color:#5ff">&#9472;&#9472;</span><span style=";color:#55f">&#9472;&#9472;</span><span style=";color:#f5f">&#9472;&#9472;</span><span style=";color:#f55">&#9472;&#9472;</span><span style=";color:#ff5">&#9472;&#9472;</span><span style=";color:#5f5">&#9472;&#9472;</span><span style=";color:#5ff">&#9472;&#9472;</span><span style=";color:#55f">&#9472;&#9472;</span><span style=";color:#f5f">&#9472;&#9472;</span><span style=";color:#f55">&#9472;&#9472;</span><span style=";color:#ff5">&#9472;&#9472;</span><span style=";color:#5f5">&#9472;&#9472;</span><span style=";color:#5ff">&#9472;&#9472;</span><span style=";color:#55f">&#9472;&#9472;</span><span style=";color:#f5f">&#9472;&#9472;</span><span style=";color:#f55">&#9472;&#9472;</span><span style=";color:#ff5">&#9472;&#9472;</span><span style=";color:#5f5">&#9472;&#9472;</span><span style=";color:#5ff">&#9472;&#9472;</span><span style=";color:#55f">&#9472;&#9472;</span><span style=";color:#f5f">&#9472;&#9496;</span><br />
+</div>
+𝕧𝟘.𝟘.𝟙
+</center>
+<br>
+${termi.shell}`)
+
 // Scroll down when you can
 setInterval(() => window.scrollTo(0, document.body.scrollHeight))
 
@@ -33,7 +46,8 @@ document.addEventListener("keydown", function onEvent(event) {
 	
 		// Run command
 		if (commandHandle(args, termi)) {
-			// If exists, it'll go to here.
+
+			// If exists, it'll launch the command and return nothiong.
 			return;
 		} else {
 	
@@ -43,7 +57,7 @@ document.addEventListener("keydown", function onEvent(event) {
 				termi.send(`<br>${termi.shell}`)
 				return;
 			}
-			// (very bash) Show a error.
+			// Scream at the user if the command isn't correct.
 			termi.send(`<br>termi: ${args.join(" ")}: command not found<br>${termi.shell}`)
 			return;
 		}
@@ -54,6 +68,8 @@ document.addEventListener("keydown", function onEvent(event) {
 		termi.setText(termitext.innerHTML.substr(0, termitext.innerHTML.length - 1));
 		return;
 	}
+
+	// Launch the history handle when the user has pressed ArrowUp
 	if (event.code === "ArrowUp") {
 		historyHandle("up", termi, termitext)
 	}
@@ -64,7 +80,6 @@ document.addEventListener("keydown", function onEvent(event) {
 		termitext.innerHTML = termitext.innerHTML + event.key
 	} else {
 		return;
-	
 	}
-});
 
+});
