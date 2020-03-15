@@ -1,7 +1,6 @@
 # Term-I. browser JS based terminal emulator.
 
-Current version: Prerelease II.<br>
-This is in no way finished!
+Release 0.0.1!
 
 - **Discord**: https://discord.gg/sAwgmYC
 - **Website**: https://wearetermi.github.io/termi/
@@ -22,19 +21,24 @@ Falkon 3.1.0 (64-bit) Linux [passed]<br>
 Chrome v80.0.3987.132 (64-bit) Windows [passed]<br>
 (Please report any bugs!)
 
-# TO;DO!
+# OLD TO:DO!
 change all names to termi [DONE]<br>
-make color command [DISCARDED, there's no reason for this]<br>
-make a in-HTML todo command [DISCARDED, it's better here.]<br>
 give the motd diffrent colors [DONE]<br>
-make a termi api / server [DISCARDED, not usefull]<br>
-statistics [DISCARDED, as this is a oss project.]<br>
 history (HEAVY) [DONE]<br>
-cornavirus api for termi [DISCARDED, not related to TERM-I]<br>
 Move to GH-pages [DONE]<br>
+
+# Release 0.0.1 todo
+Credit select users and stackoverflow answers [DONE]<br>
+Support command (discord, website and so forth) [DONE]<br>
+Coronavirus command [DONE]<br>
+Change MOTD to toilet [DONE]<br>
+Exit command [DONE]<br>
+Man command [DONE]<br>
+
 # Credits:
+History done / helped by: https://stackoverflow.com/a/60013261 && Coconut#9805<br>
 https://stackoverflow.com/a/11715670 Autoscroller<br>
 https://www.freeformatter.com/javascript-beautifier.html Javascript formatting<br>
 https://keycode.info/ Keycode names for everything!<br>
-http://patorjk.com/software/taag/#p=display&f=Speed&t=TERM-I MOTD figlet<br>
+
 http://detectmobilebrowsers.com/mobile Mobile detection<br>
