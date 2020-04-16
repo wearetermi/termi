@@ -3,7 +3,7 @@
 Release 0.0.1!
 
 - **Discord**: https://discord.gg/sAwgmYC
-- **Website**: https://wearetermi.github.io/termi/
+- **Website**: https://termi.js.org
 
 # How the heck do I use this?
 1. Click the "Download" button and get the zip.
